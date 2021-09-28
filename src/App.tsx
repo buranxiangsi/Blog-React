@@ -5,12 +5,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import styled from 'styled-components';
+import Index from './components/Index.jsx'
 
 export default function App() {
   return (
     <Router>
       <div>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -22,8 +24,8 @@ export default function App() {
               <Link to="/users">Users</Link>
             </li>
           </ul>
-        </nav>
-        {/* <Switch>
+        </nav> */}
+        <Switch>
           <Route path="/about">
             <About />
           </Route>
@@ -31,16 +33,14 @@ export default function App() {
             <Users />
           </Route>
           <Route path="/">
-            <Home />
+            <Index />
           </Route>
-        </Switch> */}
+
+        </Switch>
+
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
 }
 
 function About() {
@@ -50,4 +50,3 @@ function About() {
 function Users() {
   return <h2>Users</h2>;
 }
-
