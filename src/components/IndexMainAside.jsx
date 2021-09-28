@@ -2,13 +2,12 @@ import styled from "styled-components"
 
 const AsideWrapper=styled.aside`
    display: flex;
-   flex-grow: 1;
+   flex-grow: 0.1;
    justify-content: center;
    align-items: flex-start;
-   max-width: 250px;
-    margin-right: 20px;
+    margin-right: 10px;
     flex-flow: column;
-    box-shadow: 0px 0px 1px 1px #f4f4f4;
+    box-shadow: 0px 0px 1px 1px #eee;
    .asideContent{
        width: 100%;
        margin: 0 30px;
