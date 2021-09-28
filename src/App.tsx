@@ -6,36 +6,16 @@ import {
   Link
 } from "react-router-dom";
 import styled from 'styled-components';
-import Index from './components/Index.jsx'
+import IndexHeader from './components/IndexHeader'
 
 export default function App() {
   return (
     <Router>
       <div>
-        {/* <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav> */}
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
           <Route path="/">
-            <Index />
+            <IndexHeader />
           </Route>
-
         </Switch>
 
       </div>
@@ -43,10 +23,3 @@ export default function App() {
   );
 }
 
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
