@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import styled from 'styled-components';
 import IndexHeader from './components/IndexHeader'
-
+import IndexMain from './components/IndexMain'
 export default function App() {
   return (
     <Router>
@@ -15,6 +15,7 @@ export default function App() {
         <Switch>
           <Route path="/">
             <IndexHeader />
+            <IndexMain />
           </Route>
         </Switch>
 
